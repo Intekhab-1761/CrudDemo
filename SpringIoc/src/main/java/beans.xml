@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="airtel" class="com.tns.springioc.Airtel">
+ 
+ <property name="name" value="Intekhab"/>
+ 
+ <property name="phones">
+ 
+ <list>
+ <value>Nokia</value>
+ <value>Samsung</value>
+ <value>Vivo</value>
+ <value>oppo</value>
+ </list>
+ 
+ </property>
+ 
+ <property name="Address">
+ <set>
+ <value>Delhi</value>
+ <value>Lucknow</value>
+ <value>Bangalore</value>
+ <value>Chennai</value>
+ </set>
+ 
+ </property>
+ 
+ <property name="plans">
+ <map>
+ <entry key="1" value="Unlimited data"/>
+ <entry key="2" value="Top up"/>
+ <entry key="3" value="Roaming"/>
+ </map>
+ 
+ </property>
+ </bean>
+
+ <!-- more bean definitions go here -->
+</beans>
