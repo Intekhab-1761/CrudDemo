@@ -17,7 +17,12 @@ public class Person {
 		return "Person [name=" + name + ", id=" + id + ", certi=" + certi + "]";
 	}
 
+	public void init() {
+		System.out.println("Inside init method");
 	
-
+	}
 	
+	public void destroy() {
+		System.out.println("Inside destroy method");
+	}
 }
